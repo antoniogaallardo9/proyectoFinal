@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "720254429106",
+    "project_id": "socialmediagamer-570dc",
+    "storage_bucket": "socialmediagamer-570dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720254429106:android:ec566019c17f96c88166ab",
+        "android_client_info": {
+          "package_name": "com.esteban.socialmedia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVKuNiBgFahnoPikzlLthWLKicp6XTprA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

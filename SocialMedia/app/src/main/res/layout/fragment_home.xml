@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment"
+    android:layout_marginBottom="50dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/dark_blue">
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            style="@style/MaterialSearchBarLight"
+            app:mt_searchIconTint="@color/white"
+            app:mt_hint="Busqueda"
+            app:mt_maxSuggestionsCount="10"
+            app:mt_searchBarColor="@color/dark_blue"
+            app:mt_placeholderColor="@color/white"
+            app:mt_placeholder="UnityGaming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mt_menuIconTint="@color/white"
+            app:mt_clearIconTint="@color/white"
+            android:id="@+id/searchBar"
+            app:mt_hintColor="@color/white"
+            app:mt_backIconTint="@color/white"
+            app:mt_textColor="@color/white"
+            app:mt_leftTextSelectorTint="@color/white">
+        </com.mancj.materialsearchbar.MaterialSearchBar>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="55dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="15dp"
+        android:contentDescription="@string/imagen"
+        android:src="@drawable/float_icon"
+        app:backgroundTint="@color/rosa"
+        app:maxImageSize="20dp"
+        app:tint="@color/white" />
+
+
+</FrameLayout>

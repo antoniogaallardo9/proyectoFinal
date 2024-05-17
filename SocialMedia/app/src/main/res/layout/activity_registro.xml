@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16sp"
+            android:fontFamily="@font/monobold"
+            android:text="@string/app_name"
+            android:textColor="@color/dark_blue"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/monobold"
+            android:text="@string/registro"
+            android:textColor="@color/dark_blue"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:autofillHints=""
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:fontFamily="@font/monoligth"
+            android:hint="@string/ingresa_tu_nombre"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_blue"
+            android:textColorLink="@color/rosa"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:autofillHints=""
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/correo"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:fontFamily="@font/monoligth"
+            android:hint="@string/ingresa_tu_email"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_blue"
+            android:textColorLink="@color/rosa"
+            android:textSize="18sp"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:autofillHints=""
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:fontFamily="@font/monoligth"
+            android:hint="@string/ingresa_tu_contrase_a"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_blue"
+            android:textColorLink="@color/rosa"
+            android:textSize="18sp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/telefono"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:autofillHints=""
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:fontFamily="@font/monoligth"
+            android:hint="@string/ingresa_tu_telefono"
+            android:inputType="numberSigned"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_blue"
+            android:textColorLink="@color/rosa"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/registro"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/monobold"
+            android:onClick="registrar"
+            android:text="@string/registrarse"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
